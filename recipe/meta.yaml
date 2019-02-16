@@ -1,6 +1,6 @@
 {% set name = "azure-storage-blob" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "65ebe2e54460566c2077c6b3773a2a0623eabc7b95602010cb51b84077087fda" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "f187a878e7a191f4e098159904f72b4146cf70e1aabaf6484ab4ba72fc6f252c" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
