@@ -12,9 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -24,7 +23,8 @@ requirements:
   run:
     - python
     - azure-common >=1.1.5
-    - azure-storage-common >=1.4.0,<1.5.0
+    - azure-storage-common ~=2.1
+    - futures  # [py2k]
 
 test:
   imports:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/Azure/azure-storage-python
   license: Apache-2.0
   license_family: Apache
-  license_file: {{ RECIPE_DIR }}/LICENSE.txt
+  license_file: LICENSE.txt
   summary: 'Microsoft Azure Storage Blob Client Library for Python'
 
 extra:
