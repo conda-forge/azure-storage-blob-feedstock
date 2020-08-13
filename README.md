@@ -5,7 +5,7 @@ Home: https://pypi.org/project/azure-storage-blob/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Microsoft Azure Blob Storage Client Library for Python
 
