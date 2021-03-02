@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - azure-core <2.0.0,>=1.9.0
     - cryptography >=2.1.4
     - msrest >=0.6.10
