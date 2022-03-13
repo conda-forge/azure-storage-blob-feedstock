@@ -1,5 +1,5 @@
 {% set name = "azure-storage-blob" %}
-{% set version = "12.9.0" %}
+{% set version = "12.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: cff66a115c73c90e496c8c8b3026898a3ce64100840276e9245434e28a864225
+  sha256: 3c7dc2c93e7ff2a731acd66a36a1f0a6266072b4154deba4894dab891285ea3a
 
 build:
   number: 0
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.6
     - pip
   run:
-    - python >=2.7
-    - azure-core <2.0.0,>=1.9.0
+    - python >=3.6
+    - azure-core <2.0.0,>=1.15.0
     - cryptography >=2.1.4
-    - msrest >=0.6.10
+    - msrest >=0.6.21
 
 test:
   imports:
@@ -36,7 +36,7 @@ about:
   home: https://pypi.org/project/azure-storage-blob/
   summary: Microsoft Azure Blob Storage Client Library for Python
   license: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
