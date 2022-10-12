@@ -1,5 +1,5 @@
 {% set name = "azure-storage-blob" %}
-{% set version = "12.13.1" %}
+{% set version = "12.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 899c4b8e2671812d2cf78f107556a27dbb128caaa2bb06094e72a3d5836740af
+  sha256: a72dd9923e4b38a552f2bc1749d1fa5b820f497a8fb3cd2d77e7045bbe87bb4d
 
 build:
   number: 0
@@ -20,9 +20,9 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - azure-core <2.0.0,>=1.23.1
+    - azure-core <2.0.0,>=1.24.2
     - cryptography >=2.1.4
-    - msrest >=0.6.21
+    - msrest >=0.7.1
 
 test:
   imports:
