@@ -1,11 +1,11 @@
-About azure-storage-blob
-========================
+About azure-storage-blob-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-storage-blob-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/azure-storage-blob/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-storage-blob-feedstock/blob/main/LICENSE.txt)
 
 Summary: Microsoft Azure Blob Storage Client Library for Python
 
