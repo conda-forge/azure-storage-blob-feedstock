@@ -10,21 +10,20 @@ source:
   sha256: 43b45f19a518a5c6895632f263b3825ebc23574f25cc84b66e1630a6160e466f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - isodate >=0.6.1
-    - typing-extensions >=4.0.1
-    - python >=3.6
+    - python >=3.7
     - azure-core <2.0.0,>=1.26.0
     - cryptography >=2.1.4
-    - msrest >=0.7.1
+    - isodate >=0.6.1
+    - typing-extensions >=4.0.1
 
 test:
   imports:
