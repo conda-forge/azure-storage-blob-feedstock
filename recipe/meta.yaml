@@ -1,5 +1,5 @@
 {% set name = "azure-storage-blob" %}
-{% set version = "12.30.3" %}
+{% set version = "12.31.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 31760221ceff36b7ceed741ba0093d08ec857911b92294dce3e4efe8fa40245e
+  sha256: 997b393cfcbdc4b186d5911790d91f80387f7edc12c4d73eab963a2d26e5b2a9
 
 build:
   number: 0
